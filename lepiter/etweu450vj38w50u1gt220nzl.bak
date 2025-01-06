@@ -1,0 +1,141 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-05T12:55:10.381427+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-06T01:11:07.644263+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jhW761XnDQCRuh7BA42B+g=="
+				},
+				"code" : "calendar := BlElement new.\rtheYear := 2028.\rcalendar layout: (BlGridLayout vertical rowCount: 39; columnCount: 13).\rcalendar constraintsDo: [:c |\r\tc horizontal fitContent.\r\tc vertical fitContent].\r\"calendar border: Color gray.\r\"\tcalendar addChild: (BlTextElement new\r\t\ttext:((theYear asString) asRopedText\r\t\t\tfontSize: 14;\r\t\t\tfontName: 'Helvetica';\r\t\t\tforeground: Color darkGray;\r\t\t\tbold);\r\t\tbackground: Color paleBlue;\r\t\tmargin: (BlInsets all: 1);\r\t\tpadding: (BlInsets all: 4)). \r\t1 to: 37 do: [:nr | |dayOfWeek|\r\t\tdayOfWeek := ((nr ) % 7)+1.\r\t\tcalendar addChild: (BlTextElement new\r\t\t\ttext: (((Date dayNames at: dayOfWeek) first: 2) asRopedText\r\t\t\tfontSize: 12;\r\t\t\tfontName: 'Courier');\r\t\tpadding: (BlInsets all: 4);\r\t\tmargin: (BlInsets all: 1);\r\t\tbackground: Color veryLightGray)].\r\t\tcalendar addChild: (BlElement new size: 10@10).\r1 to: 12 do: [:monthNr | |preNr postNr|\r\tcalendar addChild: (BlTextElement new\r\t\ttext:((Date monthNames at: monthNr ) asRopedText\r\t\t\tfontSize: 12;\r\t\t\tfontName: 'Helvetica');\r\t\tbackground: Color paleBlue;\r\t\tmargin: (BlInsets all: 1);\r\t\tpadding: (BlInsets all: 4)).\r\t\t\r\t\tpreNr := (((Date year: theYear month: monthNr day: 1) dayOfWeek -1) % 7).\r\t\t(preNr = 0) ifTrue: [preNr := 7].\r\t\t1 to: (preNr-1) do: [:nr | calendar addChild: (BlElement new size: 10@10)].\r\t\tpostNr := 37-preNr- (Date  daysInMonth: monthNr forYear: theYear).\r1 to: (Date  daysInMonth: monthNr forYear: theYear) do: [:dayNr ||dayOfWeek|\r\t\tdayOfWeek := ((dayNr+preNr-1 ) % 7)+1.\r\tcalendar addChild: (BlTextElement new\r\t\ttext:((monthNr asString,':',dayNr asString) asRopedText\r\t\t\tfontSize: 12;\r\t\t\tfontName: 'Helvetica');\r\t\tborder: Color paleYellow;\r\t\tmargin: (BlInsets all: 1);\r\t\tbackground: ((#(1 7) includes: dayOfWeek ) ifTrue: \r\t\t\t[Color paleYellow] ifFalse: \r\t\t\t[Color paleGreen])\r\t\t\t)].\r\t\t\t\t1 to: (postNr+1) do: [:nr | calendar addChild: (BlElement new size: 10@10)].\r\t\tcalendar addChild: (BlTextElement new\r\t\ttext:((preNr asString, ' - ',postNr asString ) asRopedText\r\t\t\tfontSize: 12;\r\t\t\tfontName: 'Helvetica')).\r\t\t\t].\rcalendar\r"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-05T13:25:28.427901+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-06T00:52:11.702369+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+UMYWFbnDQCcK7jnA42B+g=="
+				},
+				"code" : "'2025-2-1' asDate dayOfWeekName"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-05T16:35:45.884627+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-06T00:58:32.468254+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "HNSgAFnnDQCeTJElA42B+g=="
+				},
+				"code" : "\t\tpreNr := ((Date year: 2025 month: 7 day: 1) dayOfWeek -1) % 7.\r\t\tpostNr := 36-preNr- (Date  daysInMonth: 7 forYear: 2025).\r"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-01-05T12:54:18.984425+01:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-01-05T12:54:18.984425+01:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Experiments"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "71d3aae8-55e7-0d00-912b-a49b038d81fa"
+	}
+}
